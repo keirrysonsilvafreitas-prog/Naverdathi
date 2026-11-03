@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Dilemas Digitais | Dependência da IA</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <!-- CABEÇALHO -->
+
+        <header class="header">
+
+            <div>
+                <span class="eyebrow">
+                    MARATONA TECH · DILEMAS DIGITAIS
+                </span>
+
+                <h1>
+                    Dependência tecnológica
+                    <span>da inteligência artificial</span>
+                </h1>
+
+                <p>
+                    O impacto da IA nos hábitos de estudo e na
+                    aprendizagem dos estudantes.
+                </p>
+            </div>
+
+            <div class="header-icon">🤖</div>
+
+        </header>
+
+
+        <!-- INVESTIGAÇÃO -->
+
+        <section class="investigation">
+
+            <div class="section-title">
+                <span>01</span>
+                <h2>A investigação</h2>
+            </div>
+
+            <div class="research-grid">
+
+                <article class="research-card">
+
+                    <span class="card-label">
+                        PERGUNTA PRINCIPAL
+                    </span>
+
+                    <p>
+                        O uso da IA pode comprometer a aprendizagem
+                        e a autonomia intelectual dos estudantes?
+                    </p>
+
+                </article>
+
+
+                <article class="research-card hypothesis">
+
+                    <span class="card-label">
+                        HIPÓTESE
+                    </span>
+
+                    <p>
+                        Alunos que apenas copiam respostas geradas
+                        por IA estão propensos a ter menor aprendizado
+                        e adquirir menos conhecimentos.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- RESULTADOS -->
+
+        <section class="results">
+
+            <div class="results-heading">
+
+                <div class="section-title">
+                    <span>02</span>
+                    <h2>Resultados da pesquisa</h2>
+                </div>
+
+                <div class="filter">
+
+                    <label for="chartFilter">
+                        VISUALIZAÇÃO
+                    </label>
+
+                    <select id="chartFilter">
+
+                        <option value="all">
+                            Todos os gráficos
+                        </option>
+
+                        <option value="usage">
+                            Uso da IA
+                        </option>
+
+                        <option value="learning">
+                            Aprendizagem
+                        </option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <div class="charts-grid">
+
+
+                <!-- GRÁFICO DE PIZZA -->
+
+                <article class="chart-card" id="usageCard">
+
+                    <div class="chart-heading">
+
+                        <div>
+                            <span class="chart-number">
+                                GRÁFICO 01
+                            </span>
+
+                            <h3>Frequência de utilização</h3>
+                        </div>
+
+                        <span class="chart-emoji">🥧</span>
+
+                    </div>
+
+                    <p class="question">
+                        Você utiliza respostas de chats de IA
+                        em trabalhos escolares?
+                    </p>
+
+                    <div class="chart-area">
+                        <canvas id="usageChart"></canvas>
+                    </div>
+
+                </article>
+
+
+                <!-- GRÁFICO DE BARRAS -->
+
+                <article class="chart-card" id="learningCard">
+
+                    <div class="chart-heading">
+
+                        <div>
+                            <span class="chart-number">
+                                GRÁFICO 02
+                            </span>
+
+                            <h3>Comportamento após pesquisar</h3>
+                        </div>
+
+                        <span class="chart-emoji">📊</span>
+
+                    </div>
+
+                    <p class="question">
+                        Você lê as respostas e consegue absorver
+                        algum conhecimento?
+                    </p>
+
+                    <div class="chart-area">
+                        <canvas id="learningChart"></canvas>
+                    </div>
+
+                </article>
+
+            </div>
+
+            <p class="source">
+                Fonte: pesquisa realizada pelo Google Forms ·
+                22 participantes.
+            </p>
+
+        </section>
+
+
+        <!-- CONCLUSÃO -->
+
+        <section class="conclusion">
+
+            <div class="conclusion-heading">
+
+                <span class="conclusion-icon">✦</span>
+
+                <div>
+                    <span class="eyebrow">
+                        03 · SÍNTESE DOS RESULTADOS
+                    </span>
+
+                    <h2>O que a IA concluiu?</h2>
+                </div>
+
+            </div>
+
+            <p>
+                Os resultados demonstram que a IA já está presente
+                na rotina escolar. Embora a maioria dos estudantes
+                afirme ler e obter conhecimentos por meio dessas
+                ferramentas, ainda existem comportamentos que podem
+                comprometer a aprendizagem. Assim, é fundamental
+                utilizar a inteligência artificial de forma consciente,
+                preservando o pensamento crítico e a autonomia intelectual.
+            </p>
+
+        </section>
+
+
+        <!-- RODAPÉ -->
+
+        <footer>
+
+            <strong>DILEMAS DIGITAIS</strong>
+
+            <span>Educação · Tecnologia · Pensamento crítico</span>
+
+        </footer>
+
+    </main>
+
+</body>
+</html>

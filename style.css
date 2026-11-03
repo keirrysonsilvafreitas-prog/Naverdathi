@@ -1,0 +1,412 @@
+
+:root {
+    --dark: #103b2b;
+    --green: #218653;
+    --light-green: #75c995;
+    --mint: #bde8ca;
+    --background: #f5f9f5;
+    --white: #ffffff;
+    --text: #20372a;
+    --muted: #74857a;
+    --border: #e1ebe3;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--background);
+    color: var(--text);
+    font-family: "DM Sans", Arial, sans-serif;
+}
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 28px 25px;
+}
+
+
+/* CABEÇALHO */
+
+.header {
+    background: linear-gradient(
+        110deg,
+        #103b2b,
+        #176b43
+    );
+
+    border-radius: 18px;
+    padding: 32px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: white;
+}
+
+.eyebrow {
+    color: var(--mint);
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.3px;
+}
+
+.header h1 {
+    font-size: clamp(25px, 4vw, 38px);
+    line-height: 1.2;
+    margin: 14px 0 10px;
+}
+
+.header h1 span {
+    display: block;
+    color: var(--mint);
+}
+
+.header p {
+    font-size: 13px;
+    color: #dcefe2;
+    line-height: 1.6;
+}
+
+.header-icon {
+    font-size: 65px;
+    margin-left: 20px;
+}
+
+
+/* TÍTULOS DAS SEÇÕES */
+
+.investigation,
+.results {
+    margin-top: 30px;
+}
+
+.section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.section-title > span {
+    background: #dff1e4;
+    color: var(--green);
+
+    width: 32px;
+    height: 32px;
+
+    border-radius: 9px;
+
+    display: grid;
+    place-items: center;
+
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.section-title h2 {
+    font-size: 19px;
+}
+
+
+/* PERGUNTA E HIPÓTESE */
+
+.research-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+.research-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--green);
+
+    border-radius: 12px;
+    padding: 19px;
+
+    min-height: 130px;
+}
+
+.hypothesis {
+    border-left-color: #80b990;
+}
+
+.card-label {
+    display: block;
+
+    color: var(--green);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+
+    margin-bottom: 12px;
+}
+
+.research-card p {
+    font-size: 12px;
+    line-height: 1.7;
+    font-weight: 500;
+}
+
+
+/* RESULTADOS E FILTRO */
+
+.results-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.results-heading .section-title {
+    margin-bottom: 0;
+}
+
+.filter {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    min-width: 190px;
+}
+
+.filter label {
+    color: var(--green);
+    font-size: 9px;
+    font-weight: 800;
+}
+
+.filter select {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+
+    padding: 10px;
+
+    color: var(--dark);
+    font-family: inherit;
+    font-size: 11px;
+
+    cursor: pointer;
+    outline: none;
+}
+
+
+/* GRÁFICOS */
+
+.charts-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.chart-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+
+    padding: 19px;
+    min-width: 0;
+
+    box-shadow: 0 4px 15px #103b2b08;
+}
+
+.chart-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-number {
+    color: var(--green);
+    font-size: 9px;
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+.chart-heading h3 {
+    font-size: 15px;
+    margin-top: 5px;
+}
+
+.chart-emoji {
+    font-size: 25px;
+}
+
+.question {
+    background: #f3f8f4;
+    border-left: 3px solid var(--green);
+
+    padding: 10px;
+    margin: 15px 0;
+
+    border-radius: 5px;
+
+    color: var(--muted);
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+.chart-area {
+    position: relative;
+    width: 100%;
+    height: 245px;
+}
+
+.source {
+    margin-top: 12px;
+    color: var(--muted);
+    font-size: 10px;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* CONCLUSÃO */
+
+.conclusion {
+    margin-top: 25px;
+
+    background: linear-gradient(
+        110deg,
+        #103b2b,
+        #176b43
+    );
+
+    border-radius: 16px;
+    padding: 25px;
+
+    color: white;
+}
+
+.conclusion-heading {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+
+    margin-bottom: 17px;
+}
+
+.conclusion-icon {
+    width: 49px;
+    height: 49px;
+
+    border: 1px solid #bde8ca75;
+    background: #ffffff12;
+
+    border-radius: 50%;
+
+    display: grid;
+    place-items: center;
+
+    color: var(--mint);
+    font-size: 27px;
+    flex-shrink: 0;
+}
+
+.conclusion-heading h2 {
+    font-size: 23px;
+    margin-top: 5px;
+}
+
+.conclusion > p {
+    border-top: 1px solid #ffffff35;
+    padding-top: 16px;
+
+    color: #e0eee4;
+    font-size: 12px;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+
+/* RODAPÉ */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border-top: 1px solid var(--border);
+
+    margin-top: 22px;
+    padding: 17px 0 5px;
+
+    color: var(--muted);
+    font-size: 10px;
+}
+
+footer strong {
+    color: var(--green);
+    letter-spacing: 1px;
+}
+
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 700px) {
+
+    .container {
+        padding: 18px 13px;
+    }
+
+    .header {
+        padding: 23px 18px;
+    }
+
+    .header-icon {
+        font-size: 42px;
+    }
+
+    .research-grid,
+    .charts-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .results-heading {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .filter {
+        width: 100%;
+    }
+
+    .chart-area {
+        height: 260px;
+    }
+
+    .conclusion {
+        padding: 20px;
+    }
+
+    .conclusion-heading h2 {
+        font-size: 21px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 8px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 400px) {
+
+    .header-icon {
+        display: none;
+    }
+
+    .header h1 {
+        font-size: 27px;
+    }
+
+}
